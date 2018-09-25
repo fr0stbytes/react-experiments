@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-gray);
+}
+
+:root {
+  --blue: #1e88e5;
+  --cyan: #70d4fd;
+  --light-gray: #a2aaad;
+  --dark-gray: #787d7f;
+}
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+.app {
+  text-align: center;
+  margin: 3em auto;
+  max-width: 650px;
+}
+.app-title {
+  margin-top: 1em;
+}
+.add-todo-container {
+  max-width: 640px;
+  margin: 3em auto;
+}
+.add-todo-container-inner {
+  margin-top: 2em;
+}
+.empty-text {
+  color: var(--light-gray);
+  margin: 3em auto;
+}
+/* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: var(--blue) !important;
+}
+/* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid var(--blue) !important;
+     box-shadow: 0 1px 0 0 var(--blue) !important;
+   }
